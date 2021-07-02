@@ -96,7 +96,6 @@ $CF push
 
 if [ $? -ne 0 ]; then
     echo "${BLUE}print cf push error${END}"
-    #$CF logs $IBM_APP_NAME --recent
-    $CF logs $IBM_APP_NAME
+    $CF logs $IBM_APP_NAME --recent
     exit 1
 fi
